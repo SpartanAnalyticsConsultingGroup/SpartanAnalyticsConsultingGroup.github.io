@@ -1,2 +1,2 @@
 # SpartanAnalyticsConsultingGroup.github.io
-Repor for SACG current website 
+Repo for SACG current website 
