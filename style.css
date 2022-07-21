@@ -1,0 +1,40 @@
+
+/* hide tab content */
+[data-tab-content] {
+    display: none;
+}
+
+/* only show active */
+.active[data-tab-content] {
+    display: block;
+  }
+
+
+.tabs {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    border: 1px solid black;
+}
+
+.tab {
+    cursor: pointer;
+    padding: 10px;
+}
+
+.tab.active {
+    background-color: #CCC;
+}
+
+.tab-content {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/* font size of tab title */
+ul li{
+    font-size: 20px;
+   }
+
