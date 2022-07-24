@@ -16,18 +16,25 @@
     list-style-type: none;
     margin: 0;
     padding: 0;
-    border: 1px solid black;
+    border: 1px solid black; 
+    width: 90%;
+    
+
 }
 
 .tab {
     cursor: pointer;
     padding: 10px;
+    
 }
 
+/* highlight color for current tab */
 .tab.active {
+
     background-color: #CCC;
 }
 
+/* spacing for current tab */
 .tab-content {
     margin-left: 20px;
     margin-right: 20px;
@@ -36,5 +43,34 @@
 /* font size of tab title */
 ul li{
     font-size: 20px;
+    margin: 0px;
+    padding: 0px;
    }
 
+
+/* logo in top right */
+.logo img {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  /* background-color: #ffffff; */
+}
+
+/*
+body {
+    font-family: Helvetica;
+    background-color: #053212;
+}
+
+h1 {
+    color: #ffffff;
+}
+
+p {
+    color: #ffffff;
+} 
+
+ul li{
+    color: #ffffff;
+}
+*/ 
