@@ -9,17 +9,16 @@
     display: block;
   }
 
-
 .tabs {
     display: flex;
     justify-content: space-around;
+    border-collapse: separate;
     list-style-type: none;
     margin: 0;
     padding: 0;
     border: 1px solid black; 
-    width: 90%;
-    
-
+    width: 90%; 
+     
 }
 
 .tab {
@@ -48,13 +47,39 @@ ul li{
    }
 
 
-/* logo in top right */
+/* logo in top right  */ 
 .logo img {
-  position: absolute;
-  top: 5px;
-  right: 5px;
-  /* background-color: #ffffff; */
-}
+    position:fixed; 
+    top: 5px;
+    right: 5px;
+    width:124px;
+    height:125px;
+    /* background-color: #ffffff;  */
+  } 
+ 
+  
+
+@media only screen and (max-width: 1250px) {
+    .logo img {
+        position:relative; 
+        top:-10px;
+        right: 5px;
+        width:124px;
+        height:125px;
+        /* background-color: #ffffff; */ 
+      }
+
+      .tabs {
+        display: flex;
+        justify-content: space-around;
+        border-collapse: separate;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        border: 1px solid black; 
+        width: 98%;
+    }
+} 
 
 /*
 body {
