@@ -56,8 +56,31 @@ ul li{
     height:125px;
     /* background-color: #ffffff;  */
   } 
+
+/* both forms */ 
+.all_forms{
+    width: 1000px;
+}
  
-  
+/* student form */
+.student_form{
+    float: left;
+    width: 450px;
+}
+
+/* client form */
+.client_form{
+    float: right;
+    width: 300px;
+}
+
+/*
+.social a{
+    color: black;
+    text-decoration: none;
+}
+*/ 
+
 
 @media only screen and (max-width: 1250px) {
     .logo img {
@@ -80,6 +103,38 @@ ul li{
         width: 98%;
     }
 } 
+
+
+@media only screen and (max-width: 1030px) {
+
+    .client_form{
+        float: left;
+        bottom: 0px;
+    }
+
+} 
+
+@media only screen and (max-width: 900px) {
+
+.student_form{
+    width: 300px;
+    position: absolute; 
+
+}
+.client_form{
+    position: relative;
+    bottom: -270px;
+}
+
+
+.social{
+    margin-top: 320px;
+}
+
+
+} 
+
+
 
 /*
 body {
