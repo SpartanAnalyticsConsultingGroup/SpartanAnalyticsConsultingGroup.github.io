@@ -16,3 +16,6 @@ tabs.forEach(tab => {
       target.classList.add('active')
     })
   })
+
+
+
