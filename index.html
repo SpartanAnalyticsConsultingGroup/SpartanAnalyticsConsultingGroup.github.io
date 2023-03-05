@@ -1,148 +1,203 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <!--<meta charset="UTF-8"/> --> 
-    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
-    <script src="script.js" defer></script>
-    <link href="style.css" rel="stylesheet">
-    <title> SACG </title>
+	<head>
+		<!--<meta charset="UTF-8"/> --> 
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" initial-scale=1>
+		<script src="script.js" defer></script>
+		<link href="style.css" rel="stylesheet">
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+		<title> SACG </title>
+	</head>
 
-    
-</head> 
+	<body>
 
-<body>
-  <!-- header -->
-   <div class="header">
-      <h1>Spartan Analytics Consulting Group</h1>
-    </div>  
+		<!-- header -->
+		<div class="header">
+			<h1>Spartan Analytics Consulting Group</h1>
+			<h4>At Michigan State Univeristy</h4>
+		</div>
+		<div class="logo">
+			<img src="CURRENT.png" alt="logo">  
+		</div>
+
+		<!-- tabs heading -->
+		<div class="tabs_div">
+			<ul class="tabs">
+				<!-- <li data-tab-target="#who_we_are" class="active tab">Home</li> -->
+
+				<!-- Home tab -->
+				<div class="just_home">
+					<li data-tab-target="#who_we_are" class="only_home">Home</li>
+				</div>
+				<!-- About tab dropdown -->
+				<div class="dropdown">
+					<button class="dropbtn">About</button>
+					<div class="dropdown-content">
+						<a data-tab-target="#who_we_are">Who We Are</a> 
+						<a data-tab-target="#past_projects">Past Consulting Projects</a>
+						<a data-tab-target="#social_media">Social Media</a>
+					</div>
+				</div>
+				<!-- Contact tab dropdown -->
+				<div class="dropdown">
+					<button class="dropbtn">Contact Us</button>
+					<div class="dropdown-content">
+					<a data-tab-target="#contact_student">MSU Students</a>
+					<a data-tab-target="#contact_client">Interested Clients</a>
+					</div>
+				</div>
+			</ul>
+	</div>
+	
+	<!-- tab pages -->
+	<div class="tab-content">
+		
+		<!-- tab home 
+		<div id="home" data-tab-content>
+			<h2>Welcome</h2>
+			<p>This is the home</p>
+		</div> 
+		-->
+		<!-- tab about -->
+		<div id="who_we_are" data-tab-content class="active">
+			<h2>Who We Are</h2>
+			<p>
+				Spartan Analytics Consulting Group is a professional student organization that 
+				provides Michigan State University of all backgrounds with an opportunity to learn 
+				and apply technical and business skills through consulting and data projects. 
+				Ultimately, Spartan Analytics Consulting Group wants to be an organization where 
+				its members achieve their professional goals
+			</p>
+			<p>
+				Our mission is to bring together Michigan State University undergraduate and 
+				graduate students interested in analytics and consulting, and work as one to 
+				provide pro-bono consulting services to small businesses. Throughout this journey, 
+				not only will our members be delivering insights to real customers, but they will 
+				also be developing technical skills that exceed industry expectations and improving 
+				upon their business acumen.
+			</p>
+			<p>
+				Stay connected to see all the latest from SACG!
+			</p>
+		</div>
+
+		<!-- tab past projects -->
+		<div id="past_projects" data-tab-content>
+			<h2>Here are some of our past projects</h2>
+
+		</div>
+
+		<!-- tab social media -->
+		<div id="social_media" data-tab-content>
+			<h2>Stay Connected With Us To See All The Latest From SACG!</h2>
+			<a href="https://www.instagram.com/sacg_msu/" class="fa fa-instagram" ></a>
+			<a href="https://www.linkedin.com/company/sacg-msu" class="fa fa-linkedin"></a>
+			<a href="https://github.com/SpartanAnalyticsConsultingGroup" class="fa fa-github"></a>
+
+		</div>
 
 
-    <div class="logo">
-      <img src="CURRENT.png" alt="logo">  
-    </div>  
 
+		<!-- tab contact Client -->
+		<div id = 'contact_client' data-tab-content>
+			<h2>Get In Touch With Us</h2>
+			<div class = 'all_forms'>
+				<div class = "client_form" >
+					<h4>Request Information For Potential Client</h4>
+					<form target="_blank" action="https://formsubmit.co/sacg@msu.edu" method="POST">
+						<div class="form-group">
+							<div class="form-row">
+								<div class="col">
+									<input type="text" name="name" class="form-control" placeholder="Full Name" required>
+								</div>
+								<div class="col">
+									<input type="email" name="email" class="form-control" placeholder="Email Address" required>
+								</div>
+							</div>
+						</div>
+						<div class="form-group">
+							<textarea placeholder="Your Message" class="form-control" name="message" rows="10" required></textarea>
+						</div>
+						<button type="submit" class="btn btn-lg btn-dark btn-block">Submit Form</button>
+					</form>
+				</div>
+			</div>
 
-    <!-- tabs heading -->
-    <div class="tabs_div">
-      <ul class="tabs">
-        <li data-tab-target="#home" class="active tab">Home</li>
-        <li data-tab-target="#about" class="tab">About</li>
-        <li data-tab-target="#contact" class="tab">Contact</li>
-          
-      </ul>
-    </div>
+			<div style="clear: both;"></div>
+			<div class= "social">
+				<h4>Stay Up to Date and Follow Us</h4>
+				<a href="https://www.instagram.com/sacg_msu/" class="fa fa-instagram" 
+						style="font-size: 20px !important; padding: 40px;"></a>
+				<a href="https://www.linkedin.com/company/sacg-msu" class="fa fa-linkedin"
+						style="font-size: 20px !important; padding: 40px;"></a>
+				<a href="https://github.com/SpartanAnalyticsConsultingGroup" class="fa fa-github" 
+						style="font-size: 40px !important; padding: 40px"></a>
+<!--
+				<p>
+					Instagram@ <a href=
+						"https://www.instagram.com/sacg_msu">
+					sacg_msu</a>
+				<p>
+					LinkedIn@ <a href=
+						"https://www.linkedin.com/company/sacg-msu">
+					sacg-msu</a>
+				</p>
+				<p>
+					Email: sacg@msu.edu
+				</p> --> 
+			</div>
+		</div>
 
-    <!-- tab pages -->
-    <div class="tab-content">
-      <!-- tab home -->
-        <div id="home" data-tab-content class="active">
-          <h2>Home</h2>
-          <p>This is the home</p>
-        </div>
+		<!-- tab contact student -->
+		<div id = 'contact_student' data-tab-content>
+			<h2>Get In Touch With Us</h2>
+			<div class = 'all_forms'>
+				<div class = "student_form">
+					<h4>Request Information For Michigan State University Students </h4>
+					<form target="_blank" action="https://formsubmit.co/sacg@msu.edu" method="POST">
+						<div class="form-group">
+							<div class="form-row">
+								<div class="col">
+									<input type="text" name="name" class="form-control" placeholder="Full Name" required>
+								</div>
+								<div class="col">
+									<input type="email" name="email" class="form-control" placeholder="Email Address" required>
+								</div>
+							</div>
+						</div>
+						<div class="form-group">
+							<textarea placeholder="Your Message" class="form-control" name="message" rows="10" required></textarea>
+						</div>
+						<button type="submit" class="btn btn-lg btn-dark btn-block">Submit Form</button>
+					</form>
+				</div>
+			</div>
+			<div style="clear: both;"></div>
+			<div class= "social">
+				<h4>Stay Up to Date and Follow Us</h4>
+				<a href="https://www.instagram.com/sacg_msu/" class="fa fa-instagram" 
+						style="font-size: 20px !important; padding: 40px;"></a>
+				<a href="https://www.linkedin.com/company/sacg-msu" class="fa fa-linkedin"
+						style="font-size: 20px !important; padding: 40px;"></a>
+				<a href="https://github.com/SpartanAnalyticsConsultingGroup" class="fa fa-github" 
+						style="font-size: 40px !important; padding: 40px"></a>
+<!--
+				<p>
+					Instagram@ <a href=
+						"https://www.instagram.com/sacg_msu">
+					sacg_msu</a>
+				<p>
+					LinkedIn@ <a href=
+						"https://www.linkedin.com/company/sacg-msu">
+					sacg-msu</a>
+				</p>
+				<p>
+					Email: sacg@msu.edu 
+				</p> --> 
+			</div>
+		</div>
+	</div>
+	</body>
 
-        
-        <!-- tab about -->
-        <div id="about" data-tab-content>
-          <h2>Who We Are</h2>
-          <p>
-            Spartan Analytics Consulting Group is a professional student organization that 
-            provides Michigan State University of all backgrounds with an opportunity to learn 
-            and apply technical and business skills through consulting and data projects. 
-            Ultimately, Spartan Analytics Consulting Group wants to be an organization where 
-            its members achieve their professional goals
-          </p>
-
-          <p>
-            Our mission is to bring together Michigan State University undergraduate and 
-            graduate students interested in analytics and consulting, and work as one to 
-            provide pro-bono consulting services to small businesses. Throughout this journey, 
-            not only will our members be delivering insights to real customers, but they will 
-            also be developing technical skills that exceed industry expectations and improving 
-            upon their business acumen.
-          </p>  
-          <p>
-            Stay connected to see all the latest from SACG!
-          </p>
-        </div>
-
-        <!-- tab contact -->
-        <div id = 'contact' data-tab-content>
-            <h2>Get In Touch With Us</h2>
-
-            <div class = 'all_forms'>
-
-              <div class = "student_form">
-                <h4>Request Information For Michigan State University Students </h4>
-                <form target="_blank" action="https://formsubmit.co/sacg@msu.edu" method="POST">
-                  <div class="form-group">
-                    <div class="form-row">
-                      <div class="col">
-                        <input type="text" name="name" class="form-control" placeholder="Full Name" required>
-                      </div>
-                      <div class="col">
-                        <input type="email" name="email" class="form-control" placeholder="Email Address" required>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="form-group">
-                    <textarea placeholder="Your Message" class="form-control" name="message" rows="10" required></textarea>
-                  </div>
-                  
-                  <button type="submit" class="btn btn-lg btn-dark btn-block">Submit Form</button>
-                
-                </form>
-              </div>
-
-              <div class = "client_form" >
-                <h4>Request Information For Potential Client</h4>
-                <form target="_blank" action="https://formsubmit.co/sacg@msu.edu" method="POST">
-                  <div class="form-group">
-                    <div class="form-row">
-                      <div class="col">
-                        <input type="text" name="name" class="form-control" placeholder="Full Name" required>
-                      </div>
-                      <div class="col">
-                        <input type="email" name="email" class="form-control" placeholder="Email Address" required>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="form-group">
-                    <textarea placeholder="Your Message" class="form-control" name="message" rows="10" required></textarea>
-                  </div>
-                  
-                  <button type="submit" class="btn btn-lg btn-dark btn-block">Submit Form</button>
-                
-                </form>
-              </div>
-
-              
-          </div>
-          <div style="clear: both;"></div> 
-
-          <div class= "social">
-            <h4>Stay Up to Date and Follow Us</h4>
-            <p>
-              Instagram@ <a href=
-              "https://www.instagram.com/sacg_msu">
-              sacg_msu</a>
-            <p>
-              LinkedIn@ <a href=
-              "https://www.linkedin.com/company/sacg-msu">
-              sacg-msu</a>
-            </p>
-
-            <p>
-              Email: sacg@msu.edu
-            </p>
-            
-          </div>
-
-        </div>
-
-    </div>
-</body>
-
+  
 </html>
-
-
-

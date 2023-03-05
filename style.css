@@ -9,6 +9,14 @@
     display: block;
   }
 
+.header h1 {
+    margin-bottom: -18px;
+}
+
+.header h4 {
+    font-size: smaller;
+}
+  
 .tabs {
     display: flex;
     justify-content: space-around;
@@ -24,13 +32,13 @@
 .tab {
     cursor: pointer;
     padding: 10px;
-    
+    font-size: 22px;
 }
 
 /* highlight color for current tab */
 .tab.active {
 
-    background-color: #CCC;
+    background-color: rgb(255, 255, 255);
 }
 
 /* spacing for current tab */
@@ -70,8 +78,90 @@ ul li{
 
 /* client form */
 .client_form{
-    float: right;
-    width: 300px;
+    float: left;
+    width: 450px;
+}
+
+/* dropdown item position */ 
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: lightgrey;
+    min-width: 200px;
+    z-index: 1;
+    cursor: pointer;
+}
+
+/* dropdown item color and padding */ 
+.dropdown-content a {
+    color: rgb(0, 0, 0);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+
+
+.just_home:hover .only_home {background-color: grey;}
+.only_home {
+    background:none;
+    border:none;
+    margin:0;
+    padding:0;
+    cursor: pointer;
+}
+.only_home{
+    font-size: 22px;
+    margin: 0px;
+    cursor: pointer;
+    padding: 10px;
+    font-family: "Times New Roman";
+   }
+
+/* dropdown hover */ 
+.dropdown-content a:hover {background-color: white;}
+.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropbtn {background-color: grey;}
+
+/* dropdown color and cursor */ 
+.dropbtn {
+    background:none;
+    border:none;
+    margin:0;
+    padding:0;
+    cursor: pointer;
+}
+
+/* dropdown tabs font size of tab title */
+.dropbtn{
+    font-size: 22px;
+    margin: 0px;
+    cursor: pointer;
+    padding: 10px;
+    font-family: "Times New Roman";
+   }
+
+/* social media icon for soical tab */
+.fa {
+    padding: 90px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px; 
+}
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+    font-size: 50px !important;
+}
+.fa-instagram {
+    background: #125688;
+    color: white;
+    font-size: 50px !important;
+}
+.fa-github {
+    color:black;  
+    font-size: 100px !important;
 }
 
 /*
@@ -81,7 +171,7 @@ ul li{
 }
 */ 
 
-
+/* media for screen */ 
 @media only screen and (max-width: 1250px) {
     .logo img {
         position:relative; 
@@ -104,16 +194,9 @@ ul li{
     }
 } 
 
+    
 
-@media only screen and (max-width: 1030px) {
-
-    .client_form{
-        float: left;
-        bottom: 0px;
-    }
-
-} 
-
+/* media for screen */ 
 @media only screen and (max-width: 900px) {
 
 .student_form{
@@ -122,8 +205,8 @@ ul li{
 
 }
 .client_form{
-    position: relative;
-    bottom: -290px;
+    width: 300px;
+    position: absolute; 
 }
 
 
