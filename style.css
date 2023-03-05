@@ -139,6 +139,7 @@ ul li{
     cursor: pointer;
     padding: 10px;
     font-family: "Times New Roman";
+    color: inherit;
    }
 
 /* social media icon for soical tab */
